@@ -1,0 +1,30 @@
+
+<table border="1">
+   <tr>
+    <th>Agent_Name</th>
+    <th>Agent_ID</th> 
+    <th>Agent_EMail</th>
+      <th>Agent_Rol</th>
+    <th>Cheak_UnderAgent</th>
+  </tr>
+
+
+{{#each ab}}
+
+
+  <tr>
+    <td>{{this.agent_name}}</td>
+    <td>{{this.agent_id}}</td> 
+    <td>{{this.agent_email}}</td>
+    <td>{{this.agent_rol}}</td>
+
+  
+  
+  
+       
+     <td><a href="TL?id={{this.agent_id}}">Cheak_UnderAgent</a></td>
+  </tr>
+
+
+{{/each}}
+</table>
